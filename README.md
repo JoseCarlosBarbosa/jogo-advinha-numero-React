@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+Descrição:
+Este projeto consiste em um jogo simples de adivinhação de números, onde o jogador escolhe um número entre 0 e 300, e a máquina tenta adivinhar esse número através de palpites. O objetivo do jogador é indicar se o palpite da máquina está correto, maior ou menor, até que a máquina acerte o número escolhido.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tecnologias Utilizadas:
 
-## Available Scripts
+React: A biblioteca React foi utilizada para a construção da interface do usuário, permitindo uma experiência interativa e reativa.
+Funcionalidades:
 
-In the project directory, you can run:
+Estado do Jogo:
 
-### `npm start`
+ENTRADA: O estado inicial, onde o jogador é convidado a começar o jogo.
+RODANDO: O estado durante o jogo, quando a máquina está fazendo palpites.
+FIM: O estado final, exibido quando a máquina acerta o número.
+Variáveis de Estado:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+estado: Armazena o estado atual do jogo.
+palpite: Representa o palpite atual da máquina.
+numPalpites: Contador do número de palpites dados pela máquina.
+min e max: Representam o intervalo em que a máquina faz seus palpites.
+Funções Principais:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+iniciarJogo(): Inicia o jogo, definindo o estado como 'RODANDO' e resetando as variáveis necessárias.
+menor(): Indica que o número escolhido pelo jogador é menor que o palpite atual da máquina.
+maior(): Indica que o número escolhido pelo jogador é maior que o palpite atual da máquina.
+acerto(): Indica que o palpite da máquina é o número escolhido pelo jogador, encerrando o jogo.
+Renderização da Interface:
 
-### `npm test`
+Botões e mensagens são renderizados conforme o estado do jogo.
+Quando o jogo termina, é exibida uma mensagem com o número correto e a quantidade de palpites.
+Instruções para Execução:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clone o repositório.
+Certifique-se de ter o Node.js e o npm instalados.
+Navegue até o diretório do projeto e execute npm install para instalar as dependências.
+Execute npm start para iniciar o aplicativo em um servidor local.
+Conclusão:
+Este jogo de adivinhação simples oferece uma experiência interativa usando React e demonstra conceitos básicos de lógica de programação, estados e manipulação de eventos. Pode ser expandido com recursos adicionais, como estilização, histórico de palpites, ou dificuldade ajustável. Este projeto é uma introdução divertida ao desenvolvimento web com React
