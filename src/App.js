@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+
 
 
 // maquina chuta um numero, se a maquina acerta o numero eu clico em acerto, se errar clica em maior ou menor.
